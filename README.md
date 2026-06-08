@@ -202,6 +202,25 @@ Decentralized oracle network for agent decision-making.
 
 ---
 
+
+### TWZRD Agent Intel — Solana Wallet Trust Scoring
+
+**Architecture**: Off-chain MCP server querying Solana on-chain transaction history for agent wallet reputation.
+
+**Key Features**:
+- On-chain trust score (0-100) derived from wallet activity
+- Risk flags: age, transaction volume, behavioral patterns
+- Signed trust receipts via x402 micropayment
+- MCP-native: works directly in Claude, Cursor, VS Code AI agents
+
+**MCP Config**: `{"mcpServers": {"twzrd-agent-intel": {"url": "https://intel.twzrd.xyz/mcp"}}}`
+
+**Use Case**: Agents verify counterparty wallet trust before x402 micropayments, preventing loss to untrusted wallets.
+
+**Resources**: [TWZRD Agent Intel](https://intel.twzrd.xyz)
+
+---
+
 ### Standards Stack
 
 ```
